@@ -1,0 +1,18 @@
+name: build
+
+on: [push, pull_request]
+env:
+  BUILD_TYPE: release
+
+jobs:
+  ubuntu-build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: xmake build
+        run: |
+          curl -fsSL https://xmake.io/shget.text | bash
+          xmake config -m ${BUILD_TYPE}
+          xmake
