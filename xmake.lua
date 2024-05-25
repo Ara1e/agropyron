@@ -32,6 +32,15 @@ target("1916B")
 target("1971A")
     set_kind("binary")
     add_files("src/1971A.cc")
+
+target("1969A")
+    set_kind("binary")
+    add_files("src/1969A.cc")
+
+target("11A")
+    set_kind("binary")
+    add_files("src/11A.cc")
+
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
 --
@@ -100,4 +109,3 @@ target("1971A")
 --
 -- @endcode
 --
-
