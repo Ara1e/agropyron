@@ -5,41 +5,15 @@ add_cxxflags("-Wall", "-Wextra", "-Werror", "-Wconversion",
              "-Wold-style-cast", "-Woverloaded-virtual", "-Wuninitialized",
              "-Wpointer-arith", "-Wshadow", "-Wwrite-strings")
 
-target("1971B")
-    set_kind("binary")
-    add_files("src/1971B.cc")
+local tg = {"11A", "1971B", "1950A", "1950B", "1971C", "1955A",
+            "1916B", "1971A", "1969A", "1917B", "1914A", "1910A",
+            "1896B"}
 
-target("1950A")
-    set_kind("binary")
-    add_files("src/1950A.cc")
-
-target("1950B")
-    set_kind("binary")
-    add_files("src/1950B.cc")
-
-target("1971C")
-    set_kind("binary")
-    add_files("src/1971C.cc")
-
-target("1955A")
-    set_kind("binary")
-    add_files("src/1955A.cc")
-
-target("1916B")
-    set_kind("binary")
-    add_files("src/1916B.cc")
-
-target("1971A")
-    set_kind("binary")
-    add_files("src/1971A.cc")
-
-target("1969A")
-    set_kind("binary")
-    add_files("src/1969A.cc")
-
-target("11A")
-    set_kind("binary")
-    add_files("src/11A.cc")
+for _, name in ipairs(tg) do
+    target(name)
+        set_kind("binary")
+        add_files("src/" .. name ..".cc")
+end
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
