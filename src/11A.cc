@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int main() {
     int n, d, tmp, dis = 0;
     int ans = 0, last = -1;
