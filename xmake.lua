@@ -7,7 +7,8 @@ add_cxxflags("-Wall", "-Wextra", "-Werror", "-Wconversion",
 
 local tg = {"11A", "1971B", "1950A", "1950B", "1971C", "1955A",
             "1916B", "1971A", "1969A", "1917B", "1914A", "1910A",
-            "1896B", "1948A", "1977A", "1970A1", "1971D", "1974A"}
+            "1896B", "1948A", "1977A", "1970A1", "1971D", "1974A",
+            "1957A", "1969B", "16B", "1913B"}
 
 for _, name in ipairs(tg) do
     target(name)
