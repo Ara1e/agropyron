@@ -5,10 +5,10 @@ add_cxxflags("-Wall", "-Wextra", "-Werror", "-Wconversion",
              "-Wold-style-cast", "-Woverloaded-virtual", "-Wuninitialized",
              "-Wpointer-arith", "-Wshadow", "-Wwrite-strings")
 
-local tg = {"11A", "1971B", "1950A", "1950B", "1971C", "1955A",
+local tg = {"11A", "1971B", "1950A", "1971C", "1955A", "1968B",
             "1916B", "1971A", "1969A", "1917B", "1914A", "1910A",
             "1896B", "1948A", "1977A", "1970A1", "1971D", "1974A",
-            "1957A", "1969B", "16B", "1913B"}
+            "1957A", "1969B", "16B", "1913B", "1975A", "1951A"}
 
 for _, name in ipairs(tg) do
     target(name)
